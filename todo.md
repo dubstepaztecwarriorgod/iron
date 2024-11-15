@@ -6,3 +6,4 @@
 - setup qemu script
 - make hello world
 - test on bare metal
+- implement primitve shell
