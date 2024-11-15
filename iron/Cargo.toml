@@ -1,12 +1,26 @@
+cargo-features = ["per-package-target"]
+
+
+[package.metadata.bootloader.target]
+value = "86_64-unknown-iron-gnu.json"
+
 [package]
 name = "iron"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.78.0"
+
+
+default-target = "x86_64-unknown-iron-gnu.json"
 
 [dependencies]
+
 
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[dev-dependencies]
+bootloader = {version="0.11.8"}
