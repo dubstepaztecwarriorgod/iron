@@ -1,0 +1,8 @@
+- support x86_64
+- choose a bootloader
+- write in rust (no java)
+- implement memcpy and others
+- setup rust project
+- setup qemu script
+- make hello world
+- test on bare metal
