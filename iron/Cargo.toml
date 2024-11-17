@@ -14,6 +14,7 @@ rust-version = "1.78.0"
 
 [dependencies]
 bootloader = {version="0.9.29"}
+ufmt = "0.2.0"
 
 [profile.dev]
 panic = "abort"
