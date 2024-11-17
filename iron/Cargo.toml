@@ -1,8 +1,9 @@
 #cargo-features = ["per-package-target"]
 
+#
+#[package.metadata.bootloader]
+#target = "x86_64-unknown-none"
 
-[package.metadata.bootloader]
-target = "x86_64-unknown-none"
 
 [package]
 name = "iron"
@@ -10,8 +11,9 @@ version = "0.1.0"
 edition = "2021"
 rust-version = "1.78.0"
 
-[dependencies]
 
+[dependencies]
+bootloader = {version="0.9.29"}
 
 [profile.dev]
 panic = "abort"
@@ -20,4 +22,4 @@ panic = "abort"
 panic = "abort"
 
 [dev-dependencies]
-bootloader = {version="0.11.8", target="x86_64-unkown-none"}
+
